@@ -1,0 +1,198 @@
+https://preview.themeforest.net/item/gotravel-a-travel-agency-tourism-theme/full_screen_preview/18939921?_ga=2.12222324.157771365.1647276559-1925882066.1647276559
+
+https://preview.colorlib.com/#travelix
+
+.btn {
+    background: none;
+    color: rgb(252, 252, 252);
+    width: 10vw;
+    height: 8vh;
+    border: 1px solid #338033;
+    font-size: 1.2rem;
+    transition: .6s;
+    overflow: hidden;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn::before {
+    content: '';
+    display: block;
+    /* position: relative; */
+    background: rgba(255, 255, 255, .5);
+    width: 10vw;
+    height: 8vh;
+    left: 0;
+    top:0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translateX(-130px) skewY(-15deg);
+
+}
+
+.btn::after {
+    content: '';
+    display: block;
+    /* position: absolute; */
+    background: rgba(255, 255, 255, .2);
+    width: 5vw;
+    height: 8vh;
+    left: 30px;
+    top:0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translateX(-100px) scaleX(-15deg);
+
+}
+
+.btn:hover {
+    background: #338033;
+    cursor: pointer;
+}
+
+.btn:hover::before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+.btn:hover::after {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
+
+//second button 
+.intro .intro-text .intro-signup-btn .btn {
+    /* overflow:hidden ; */
+    color: var(--background-color);
+    border-radius: 30px;
+    box-shadow: 0 0 0 0 rgba(143, 64, 248, 0.5), 0 0 0 0 rgba(39, 200, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.intro .intro-text .intro-signup-btn .btn::after {
+    content: '';
+    width: 200px;
+    height: 200px;
+   
+    background-color: #ff3cac;
+    background-image: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
+    z-index: -1;
+    transition: transform 0.5s ease;
+}
+
+.intro .intro-text .intro-signup-btn .btn:hover {
+    transition: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 rgba(143, 64, 248, 0.5), -10px 10px 25px 0 rgba(39, 200, 255, 0.5);
+}
+
+.intro .intro-text .intro-signup-btn .btn:hover::after {
+    transform: rotate(150deg);
+}
+
+//buton 3
+
+.intro .intro-text .intro-signup-btn {
+    text-align: center;
+    align-self: center;
+
+}
+
+.intro .intro-text .intro-signup-btn a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.562);
+    /* background: #3e0f69bd; */
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    transition: 0.5s;
+    border-radius: .4rem;
+    
+    /* height: 4vh; */
+    
+}
+
+.intro .intro-text .intro-signup-btn a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.intro .intro-text .intro-signup-btn a span {
+    display: block;
+    position: absolute;
+    background: #2894ff;
+}
+
+.intro .intro-text .intro-signup-btn a span:nth-child(1) {
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+.intro .intro-text .intro-signup-btn a:hover span:nth-child(1) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+.intro .intro-text .intro-signup-btn a span:nth-child(2) {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.intro .intro-text .intro-signup-btn a:hover span:nth-child(2) {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.intro .intro-text .intro-signup-btn a span:nth-child(3) {
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+.intro .intro-text .intro-signup-btn a:hover span:nth-child(3) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+.intro .intro-text .intro-signup-btn a span:nth-child(4) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+.intro .intro-text .intro-signup-btn a:hover span:nth-child(4) {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}

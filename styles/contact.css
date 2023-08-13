@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&family=Righteous&display=swap');
+:root {
+    --background-color: white;
+    --themecolor: #0fc9ccbb;
+    --themegradiant: linear-gradient(to bottom, #faffff, #d4f3f3, #ace6e7, #80dadc, #46cdd0);
+    --footertheme: linear-gradient(to bottom, #ffffff, #fcfdff, #f7fcff, #f1fbff, #ebfafe, #def6fa, #d0f3f6, #c3efef, #aae7e8, #8fdfe0, #72d7d9, #4dcfd2);
+    --contactbackgroundgradiant: linear-gradient(to top, #ffffff, #f8faff, #ecf6ff, #ddf2ff, #ccf0fb, #beedf7, #afebf0, #a2e8e8, #91e4e4, #7ee0e1, #69dbdd, #4fd7da);
+    --inputbackgroundcolor: #ebecf080;
+    --mainfont: 'Comfortaa', cursive;
+    --subfont: 'Righteous', cursive;
+    --headerfontcolor: #551A8B;     
+}
+
+.main {
+    display: flex;
+    background-image: var(--contactbackgroundgradiant);
+    justify-content: center;
+    align-self: center;
+    margin: 0;
+    gap: 10rem;
+}
+
+.side-text {
+    align-self: center;
+    line-height: 3rem;
+    /* margin-bottom: 10rem; */
+    text-align: center;
+}
+
+.side-text h1 {
+    color: var(--headerfontcolor);
+    text-align: center;
+    font-weight: bolder;
+    margin:0;
+    font-size: 3.5rem;
+    text-shadow: 4px 4px var(--themecolor);
+}
+
+.side-text p {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.side-text img {
+    height: 50vh;
+}
+
+.main .container {
+    display: block;
+    /* background: url(../images/contact/sea.jpg) no-repeat center; */
+    background-color: rgba(255, 255, 255, 0.295);
+    background-size: cover;
+    /* min-width: 20%; */
+    justify-content: center;
+    align-self: center;
+    margin: 0;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    /* text-align: center; */
+}
+
+.main .side-image {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.main .form {
+    margin-top: 5rem;
+    width: 50%;
+    align-content: center;
+    text-align: center;
+    place-self: center;
+}
+
+form {
+    /* display: flex; */
+    margin-top: 0em;
+}
+
+.form-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    max-width: 1024px;
+    /* margin: auto; */
+    /* padding-top: 3rem; */
+    place-self: center;
+    align-self: center;
+}
+
+.form .form-div #textbox {
+    grid-column: span 2;
+}
+
+.input-box {
+    display: grid;
+    font-family: var(--mainfont);
+    font-size: 0.2rem;
+}
+
+.input-box span {
+    margin: 0.8rem;
+    text-align: left;
+    color: var(--headerfontcolor);
+    font-family: var(--mainfont);
+    font-size: 1.2rem;
+}
+
+input, textarea {
+    background-color: var(--inputbackgroundcolor);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    margin: .5rem;
+    border: 0;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 15px;
+    border-radius: 1rem;
+    font-family: var(--mainfont);
+    color: var(--headerfontcolor);
+}
+
+textarea.contact-message {
+    height: 15rem;
+}
+
+.button {
+    cursor: pointer;
+    font-family: inherit;
+    -webkit-appearance: none;
+    border-radius: 1rem;
+    color: var(--headerfontcolor);
+    font-family: var(--mainfont);
+    font-weight: 900;
+    background-color: var(--themecolor);
+    grid-column: span 1;
+    /* place-self: center; */
+}
+
+.button:hover {
+    /* background-color: var(--orange); */
+    color: var(--background-color);
+}
+
+.button:focus {
+    background-color: var(--inputbackgroundcolor);
+}
+
+textarea:focus {
+    background-color: var(--inputbackgroundcolor);
+}

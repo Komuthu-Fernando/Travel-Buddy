@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&family=Righteous&display=swap');
+:root {
+     --background-color: white;
+     --themecolor: #0fc9ccbb;
+     --themegradiant: linear-gradient(to bottom, #faffff, #d4f3f3, #ace6e7, #80dadc, #46cdd0);
+     --footertheme: linear-gradient(to bottom, #ffffff, #fcfdff, #f7fcff, #f1fbff, #ebfafe, #def6fa, #d0f3f6, #c3efef, #aae7e8, #8fdfe0, #72d7d9, #4dcfd2);
+     --mainfont: 'Comfortaa', cursive;
+     --subfont: 'Righteous', cursive;
+     --headerfontcolor: #551A8B;     
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img {
+    align-self:center;
+    text-align: center;
+}
+
+img {
+    height: 50vh;
+}
+
+.container {
+    max-width: 30vw;
+    background: var(--background-color);
+    padding: 3rem;
+    border-radius: 2rem;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    margin-top: 5rem;
+}
+
+.container h2 {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--themecolor);
+    text-align: center;
+}
+
+.container h2::before{
+    content: '';
+    position: absolute;
+    left: 10;
+    bottom: 0;
+    height: 3px;
+    width: 28px;
+    border-radius: 12px;
+    background: var(--headerfontcolor);
+}
+  
+.container form .input-box{
+    height: 6vh;
+    margin: 1.2rem 0;
+}
+
+form .input-box input{
+    height: 100%;
+    width: 28vw;
+    outline: none;
+    padding: 0 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--headerfontcolor);
+    border: 1.5px solid #34a5b9;
+    border-bottom-width: 2.5px;
+    border-radius: 1.2rem;
+    transition: all 0.3s ease;
+  
+}
+
+form .policy{
+    display: flex;
+    align-items: center;
+}
+
+form h3{
+    color: #707070;
+    font-size: .9rem;
+    font-weight: 500;
+    margin-left: .9rem;
+  
+}
+  
+.input-box.button input{
+    color: white;
+    border: none;
+    background: var(--themecolor);
+    cursor: pointer;
+    max-width: 10vw;
+  
+}
+
+form .text h3 a{
+    color: var(--themecolor);
+    text-decoration: none;
+}
+
+form .input-box input:focus{
+    background-color: #ebecf080;
+}

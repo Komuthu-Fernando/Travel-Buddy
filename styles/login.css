@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&family=Righteous&display=swap');
+:root {
+    --background-color: white;
+    --themecolor: #0fc9ccbb;
+    --themegradiant: linear-gradient(to bottom, #faffff, #d4f3f3, #ace6e7, #80dadc, #46cdd0);
+    --footertheme: linear-gradient(to bottom, #ffffff, #fcfdff, #f7fcff, #f1fbff, #ebfafe, #def6fa, #d0f3f6, #c3efef, #aae7e8, #8fdfe0, #72d7d9, #4dcfd2);
+    --mainfont: 'Comfortaa', cursive;
+    --subfont: 'Righteous', cursive;
+    --headerfontcolor: #551A8B;     
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.form-title {
+    color: #babecc;
+}
+
+main .log-img{
+    place-self: center;
+    align-self: center;
+    margin-right: -20rem;
+    margin-top: 10rem;
+}
+
+.log-img img{
+    height: 40vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.login-with-social {
+    color: #babecc;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+p {
+    text-align: center;
+    margin: 1.1rem;
+    font-weight: 800;
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: #babecc
+}
+
+.login-form {
+    width: 350px;
+}
+
+.form-title {
+    text-align: center;
+    padding: 25px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+input {
+    margin-right: 8px;
+    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5x 10px #fff;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+    color: var(--headerfontcolor);
+}
+
+button, input {
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    border-radius: 20rem;
+    padding: 1rem;
+    background-color: #ebecf0;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+input:focus {
+    box-shadow: inset 1px 1px 2px #babecc, inset -1px -1x 2px #fff;
+}
+
+button {
+    color: #61677c;
+    font-weight: bold;
+    box-shadow: -5px -5px 20px #fff, 5px 5x 20px #babecc;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+    /* width: 100%; */
+}
+
+button:hover {
+    box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;    
+}
+
+button:active {
+    box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;  
+}
+
+.color {
+    display: block;
+    /* width: 10%; */
+    color: var(--themecolor);
+}
+
+.social {
+    display: flex;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.social ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    align-self: center;
+    text-align: right;
+}
+
+.social ul li {
+    display: inline;
+    /* margin-right: 2.5rem; */
+}
+
+.social .social-icons {
+    border-radius: 8px;
+    line-height: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+    font-size: 18px;
+}
+
+.signup {
+    color: var(--themecolor);
+}

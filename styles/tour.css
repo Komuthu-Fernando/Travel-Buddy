@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&family=Righteous&display=swap');
+:root {
+    --background-color: white;
+    --themecolor: #0fc9ccbb;
+    --themegradiant: linear-gradient(to bottom, #faffff, #d4f3f3, #ace6e7, #80dadc, #46cdd0);
+    --footertheme: linear-gradient(to bottom, #ffffff, #fcfdff, #f7fcff, #f1fbff, #ebfafe, #def6fa, #d0f3f6, #c3efef, #aae7e8, #8fdfe0, #72d7d9, #4dcfd2);
+    --mainfont: 'Comfortaa', cursive;
+    --subfont: 'Righteous', cursive;
+    --headerfontcolor: #551A8B;     
+}
+
+.item {
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.item-raw {
+    display: flex;
+    flex-direction: column;
+}
+
+.raw {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.item-raw {
+    text-align: center;
+}
+
+.item-raw h4{
+   margin-bottom: 0;
+   padding: 0; 
+   color: var(--themecolor);
+   text-transform: uppercase;
+}
+
+.item-raw h2{
+    color: var(--headerfontcolor);
+    font-weight: 900;
+}
+
+.item-raw p{
+    margin-top: -.5rem;
+    margin-bottom: 1.5rem;
+    color: rgba(43, 42, 42, 0.952); 
+}
+
+.item .item1 {
+    display: flex;
+    background-image: url(../images/tour/switzerland.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    min-width: 22vw;
+    border-radius: 1.2rem;
+
+}
+
+
+
+.item .item2 {
+    display: flex;
+    background-image: url(../images/tour/paris.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    min-width: 22vw;
+    border-radius: 1.2rem;
+
+}
+
+.item .item3 {
+    display: flex;
+    background-image: url(../images/tour/canada.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    min-width: 22vw;
+    border-radius: 1.2rem;
+
+}
+
+.raw .item1 .content ,.item2 .content,.item3 .content {
+    place-self: end center;
+    background-color: rgba(249, 252, 248, 0.466);
+    max-height: 8vh;
+    min-width: 10vw;
+    border-radius: 1rem;
+    text-align: center;
+    margin-left: 6rem;
+    margin-bottom: 1rem;
+   
+}
+
+#item2-img1 {
+    background-image: url(../images/tour/transport/boat.jpg);
+}
+
+#item2-img2{
+    background-image: url(../images/tour/transport/camel.jpg);
+}
+
+#item2-img3 {
+    background-image: url(../images/tour/transport/helicopter.jpg);
+}
+
+#item3-img1 {
+    background-image: url(../images/tour/activities/ballooning.jpg);
+}
+
+#item3-img2 {
+    background-image: url(../images/tour/activities/rafting.jpg);
+}
+
+#item3-img3 {
+    background-image: url(../images/tour/activities/hike.jpg);
+}
+
+@media screen and (max-width: 700px) {
+
+    .raw {
+        flex-direction: column;
+    }
+
+}
